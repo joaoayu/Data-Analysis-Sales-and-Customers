@@ -7,7 +7,7 @@ README.md           # This documentation file<br>
 project-root/<br>
 │<br>
 ├── src/                # Source code for data analysis<br>
-├── data/               # Raw and processed data or scripts to retrieve them<br>
+├── data/               # Raw and processed data<br>
 ├── docs/               # Documentation and visualizations<br>
 
 ## Environment Setup
