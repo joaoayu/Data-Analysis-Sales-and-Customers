@@ -4,7 +4,6 @@ Dataset: https://www.kaggle.com/datasets/carrie1/ecommerce-data?resource=downloa
 
 ## Repository Structure
 The repository is organized as follows:<br>
-README.md           # This documentation file<br>
 project-root/<br>
 │<br>
 ├── src/                # Source code for data analysis<br>
