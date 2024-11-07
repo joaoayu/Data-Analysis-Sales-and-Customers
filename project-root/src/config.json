@@ -1,0 +1,16 @@
+import json
+
+with open('config.json', 'r') as file:
+    config = json.load(file)
+
+# Parâmetros da configuração
+top_n_products = config["top_n_products"]
+top_n_customers = config["top_n_customers"]
+output_directory = config["output_directory"]
+analysis_period = config["analysis_period"]
+
+produtos_mais_vendidos = df.groupby('StockCode')['Quantity'].sum().sort_values(ascending=False).head(top_n_products)
+clientes_mais_valiosos = df.groupby('CustomerID')['TotalValue'].sum().sort_values(ascending=False).head(top_n_customers)
+
+produtos_mais_vendidos.to_csv(f'{output_directory}top_produtos_vendidos.csv', index=True)
+clientes_mais_valiosos.to_csv(f'{output_directory}top_clientes_valiosos.csv', index=True)
