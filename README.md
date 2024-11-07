@@ -64,31 +64,38 @@ monthly_sales.plot(kind='line')
 ```
 
 ## Description of Analyses and Decisions
-1. Top 10 Best-Selling Products<br>
-The analysis of the top-selling products aims to identify which products generated the most sales volume. The quantity of each product is summed, and the top 10 are selected.<br>
 
-### Decisions Taken:
+### 1. Top 10 Best-Selling Products
+This analysis identifies the products that generated the most sales volume by summing the quantity sold for each item and selecting the top 10.
 
-Duplicate products were handled to ensure accurate counting.<br>
-A bar chart was used for easy visualization.<br>
-2. Top 10 Most Valuable Customers<br>
-We analyzed the customers with the highest purchase volume by summing the value of all their purchases.<br>
+#### Key Decisions:
+- Duplicate products were filtered out to ensure accurate counts.
+- A bar chart was used to provide a clear visualization.
 
-### Decisions Taken:
+---
 
-Only customers with valid purchases were considered.<br>
-A bar chart was chosen to represent the most valuable customers.<br>
-3. Monthly Sales<br>
-The data was grouped by month, and the total sales for each month were calculated to identify monthly trends.<br>
+### 2. Top 10 Most Valuable Customers
+This analysis focuses on customers with the highest purchase volume by summing the total value of their purchases.
 
-### Decisions Taken:
+#### Key Decisions:
+- Only customers with valid purchase data were included.
+- A bar chart was chosen to represent the most valuable customers.
 
-The InvoiceDate column was converted to the datetime type.<br>
-A line chart was used to show sales over time.<br>
-4. Sales by Country<br>
-The data was grouped by country to analyze which countries generated the most sales.<br>
+---
 
-### Decisions Taken:
+### 3. Monthly Sales
+Sales data was grouped by month to track trends over time by calculating the total sales for each month.
 
-The Country column was used for the analysis.<br>
-A bar chart was chosen to compare sales across countries.<br>
+#### Key Decisions:
+- The `InvoiceDate` column was converted to the datetime type for accurate time-based grouping.
+- A line chart was used to visualize sales trends over time.
+
+---
+
+### 4. Sales by Country
+The data was grouped by country to identify the regions generating the highest sales.
+
+#### Key Decisions:
+- The `Country` column was used as the primary variable for this analysis.
+- A bar chart was chosen to compare sales across countries.
+
