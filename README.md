@@ -13,17 +13,22 @@ project-root/<br>
 ## Environment Setup
 > [!TIP]
 > If you're using Google Colab, simply execute the code cells to install the dependencies.
-To run this project, follow these steps:
+
+#### To run this project, follow these steps:
 1. Clone the Repository
 First, clone the repository to your local machine or create a new environment in Google Colab to work with the scripts and notebooks:
+Use:
+```
+git clone https://github.com/your-username/repository-name.git
+```
 
-Use: `git clone https://github.com/your-username/repository-name.git`
-
-2. Install Dependencies
+3. Install Dependencies
 This project doesn't have a requirements.txt, but you can install the necessary libraries manually. Here are the libraries you need:
-`pip install pandas matplotlib oracledb`
+```
+pip install pandas matplotlib oracledb
+```
 
-3. Load the Data
+4. Load the Data
 If you have the CSV file with the data, upload it to Google Colab or place it in the data/ folder if you're working locally.
 
 ```
